@@ -13,7 +13,15 @@ on:
     branches: [ $default-branch, $protected-branches ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ $default-branch ]
+    brancSuper — merci. Petite précision : voulez‑vous dire que vous avez exécuté les scripts et ajouté les secrets, ou voulez‑vous que je génère le script non‑interactif qui lit un fichier .env et injecte automatiquement les variables (moins sûr) ?
+
+Choisissez une option (répondez par le numéro) :
+1) J’ai exécuté les scripts — j’ai besoin que vous vérifiiez la PR / que je relise le code (donnez l’URL ou le numéro de la PR).  
+2) Non, génère le script non‑interactif (.env → gh secret set / vercel env add).  
+3) Aide pas à pas : je veux que vous me guidiez pendant que j’exécute les scripts (je collerai les sorties ici).  
+4) Autre (décrivez brièvement).
+
+Dites juste « 1 », « 2 », « 3 » ou « 4 … ». Je continue immédiatement selon votre choix hes: [ $default-branch ]
   schedule:
     - cron: $cron-weekly
 
